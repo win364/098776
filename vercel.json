@@ -1,0 +1,45 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/mines/user",
+      "dest": "/api/mines-user.js"
+    },
+    {
+      "src": "/mines/settings",
+      "dest": "/api/mines-settings.js"
+    },
+    {
+      "src": "/mines/sessions",
+      "dest": "/api/mines-sessions.js"
+    },
+    {
+      "src": "/mines/session",
+      "dest": "/api/mines-session.js"
+    },
+    {
+      "src": "/mines/round",
+      "dest": "/api/mines-round.js"
+    },
+    {
+      "src": "/mines/session/(.*)",
+      "dest": "/api/mines-session-id.js"
+    },
+    {
+      "src": "/manifest.json",
+      "dest": "/api/manifest.js"
+    },
+    {
+      "src": "/mines/(.*)",
+      "dest": "/mines/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
